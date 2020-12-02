@@ -20,9 +20,11 @@ on:
         default: 'false'
 #  schedule:
 #    - cron: 0 8 * * 5
+  watch:
+    types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/weweyes/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -83,6 +85,9 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        
+        cd package/lean  
+        rm -rf luci-theme-argon
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
