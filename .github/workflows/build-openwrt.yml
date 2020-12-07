@@ -18,6 +18,7 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+# 开启SSH:在Run Workflow时把SSH connection to Actions的值改为true
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
