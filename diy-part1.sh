@@ -26,9 +26,9 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-a
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
-svn co https://github.com/weweyes/openwrt-packages/trunk/luci-app-smartdns package/luci-app-smartdns
-svn co https://github.com/weweyes/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
-svn co https://github.com/weweyes/openwrt-packages/trunk/luci-app-aliddns package/luci-app-aliddns
+svn co https://github.com/weweyes/openwrt-package/trunk/luci-app-smartdns package/luci-app-smartdns
+svn co https://github.com/weweyes/openwrt-package/trunk/luci-app-adguardhome package/luci-app-adguardhome
+svn co https://github.com/weweyes/openwrt-package/trunk/luci-app-aliddns package/luci-app-aliddns
 
 # Add theme
 #svn co https://github.com/weweyes/openwrt-packages/trunk/luci-theme-opentomcat package/luci-theme-opentomcat
